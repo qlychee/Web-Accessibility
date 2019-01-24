@@ -1,0 +1,57 @@
+.num {
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    
+}
+.contact{
+    width: 130px;
+    height: 40px;
+    margin: 3px;
+}
+#c1{
+    background-color: purple;
+}
+#c2 {
+    background-color: green;
+}
+#c3 {
+    background-color: yellow;
+}
+#c4 {
+    background-color: red;
+}
+.select{
+    width: 78px;
+    height: 50px;
+    margin: 5px;
+}
+#addc {
+    width: 150px;
+    height: 30px;
+    margin: 4px;
+}
+#clear2 {
+    width: 70px;
+    height: 30px;
+    margin: 4px;
+}
+button {
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    color: black;
+    font-size: 20px;
+}
+.contentTab {
+    color: black;
+    font-size: 20px;
+}
+form {
+    margin: 3px;
+}
+input {
+    font-size: 19px;
+}
+
+

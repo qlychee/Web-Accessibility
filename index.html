@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="phone.css">
+        <title>Elizabeth Qiu</title>
+    </head>
+    <body>
+        <div class="Tabs" id="tab_bar">
+            <button class="tab" id="button1">Dialer</button>
+            <button class="tab" id="button2">Contact List</button>
+            <button class="tab" id="button3">Add Contact</button>
+        </div>
+        <div class="contents" id="content">
+            <div class="contentTab" id="dialer">
+                <br>
+                <button class="num" id="1">1</button>
+                <button class="num" id="2">2</button>
+                <button class="num" id="3">3</button>
+                <br>
+                <button class="num" id="4">4</button>
+                <button class="num" id="5">5</button>
+                <button class="num" id="6">6</button>
+                <br>
+                <button class="num" id="7">7</button>
+                <button class="num" id="8">8</button>
+                <button class="num" id="9">9</button>
+                <br>
+                <button class="num" id="*">*</button>
+                <button class="num" id="0">0</button>
+                <button class="num" id="#">#</button>
+                <br>
+                <button class="select" id="dial">Dial</button>
+                <button class="select" id="clear">Clear</button>
+
+
+            </div>
+            <div class="contentTab" id="contact_list">
+                Your Teletubby friends:
+                <br>
+                <button class="contact" id="c1">Tinky Winky</button>
+                <br>
+                <button class="contact" id="c2">Dipsy</button>
+                <br>
+                <button class="contact" id="c3">Laa-Laa</button>
+                <br>
+                <button class="contact" id="c4">Po</button>
+                <br>
+                Other:
+                <br>
+                <button class="contact" id="c5">Alice + Bob</button>
+                <br>
+                <button class="contact" id="c6">Joe Bloggs</button>
+                <br>
+                <button class="contact" id="c7">John Doe</button>
+
+
+            </div>
+            <div class="contentTab" id="add_contact">
+                <form>
+                    <label for="name">Name: </label>
+                    <br>
+                    <input id="add1" placeholder="Jane Smith">
+                    <br>
+                    <label for="number">Phone Number: </label>
+                    <br>
+                    <input id="add2" placeholder="555-555-5555">
+                    <br>
+                    <label for="email">Email Address:</label>
+                    <br>
+                    <input id="add3" placeholder="jane.smith@smith.jane">
+                </form>
+                <button class="select" id="addc">Add Contact</button>
+                <button class="select" id="clear2">Clear</button>
+
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="phone.js"></script>
+        
+    </body>
+</html>
