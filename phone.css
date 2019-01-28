@@ -4,6 +4,11 @@
     margin: 4px;
     
 }
+#dialnum {
+    margin: 4px;
+    height: 40px;
+    width: 160px;
+}
 .contact{
     width: 130px;
     height: 40px;
