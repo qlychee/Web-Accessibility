@@ -14,6 +14,7 @@
         <div class="contents" id="content" role="main" aria-live="polite">
             <div class="contentTab" id="dialer">
                 <form>
+                	<label for = "dialnum"></label>
                     <input id="dialnum">
                 </form>
                 <div id="dial_pad">
@@ -78,23 +79,22 @@
             <div class="contentTab" id="add_contact">
                 <form>
                     <label for="name">Name: </label>
-                    <br>
-                    <input id="add1" placeholder="Jane Smith">
+                    <input id="name" placeholder="Jane Smith">
                     <br>
                     <label for="number">Phone Number: </label>
-                    <br>
-                    <input id="add2" placeholder="555-555-5555">
+                    <input id="number" placeholder="555-555-5555">
                     <br>
                     <label for="email">Email Address:</label>
-                    <br>
-                    <input id="add3" placeholder="jane.smith@smith.jane">
+                    <input id="email" placeholder="jane.smith@smith.jane">
                 </form>
                 <button class="select" id="addc" accesskey="+">Add Contact</button>
                 <button class="select" id="clear2" accesskey="=">Clear</button>
 
             </div>
             <div class="contentTab" id="help_tab">
-            	Accessibility Features including tabbing for navigation and use of keyboard shortcuts.
+            	Accessibility Features including tab control for navigation and use of keyboard shortcuts.
+            	<br>
+            	Features were tested in Chrome.
             	<br>
             	<br>
             	For Mac Users on Chrome, Firefox, or Safari: use Control+Alt+AccessKey
@@ -146,7 +146,17 @@
 				</table>
 
 				<br>
-				Contact Images source: <a href ="https://teletubbies.fandom.com/wiki/Teletubbies_Wiki">Teletubbies Wiki</a>
+				Contact images source: <a href ="https://teletubbies.fandom.com/wiki/Teletubbies_Wiki">Teletubbies Wiki</a>
+				<br>
+				<br>
+				All images have captions with HTML alt tag.
+				<br>
+				ARIA landmark navigation role was added to the tabs.
+				<br>
+				ARIA main role and live region with value of polite was added to the tab content.
+				<br>
+				The website URL was submitted to WAVE and problems listed on the report were fixed.
+
 
             </div>
         </div>
@@ -157,7 +167,7 @@
         <br>
         Elizabeth Qiu
         <br>
-        Links to Files:
+        Link to Files:
         <br>
         <a href="https://github.com/qlychee/Web-Accessibility">Github Repo</a> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
