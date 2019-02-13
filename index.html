@@ -1,59 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="phone.css">
         <title>Elizabeth Qiu</title>
     </head>
     <body>
         <div class="Tabs" id="tab_bar">
-            <button class="tab" id="button1">Dialer</button>
-            <button class="tab" id="button2">Contact List</button>
-            <button class="tab" id="button3">Add Contact</button>
+            <button class="tab" id="button1" accesskey="D" >Dialer</button>
+            <button class="tab" id="button2" accesskey="C" >Contact List</button>
+            <button class="tab" id="button3" accesskey="A" >Add Contact</button>
+            <button class="tab" id="button4" accesskey="H" >Help/About</button>
         </div>
         <div class="contents" id="content">
             <div class="contentTab" id="dialer">
                 <form>
                     <input id="dialnum">
                 </form>
-                <button class="num" id="1">1</button>
-                <button class="num" id="2">2</button>
-                <button class="num" id="3">3</button>
-                <br>
-                <button class="num" id="4">4</button>
-                <button class="num" id="5">5</button>
-                <button class="num" id="6">6</button>
-                <br>
-                <button class="num" id="7">7</button>
-                <button class="num" id="8">8</button>
-                <button class="num" id="9">9</button>
-                <br>
-                <button class="num" id="*">*</button>
-                <button class="num" id="0">0</button>
-                <button class="num" id="#">#</button>
-                <br>
-                <button class="select" id="dial">Dial</button>
-                <button class="select" id="clear">Clear</button>
-
+                <div id="dial_pad">
+	                <button class="num" id="1" accesskey="1">1</button>
+	                <button class="num" id="2" accesskey="2">2</button>
+	                <button class="num" id="3" accesskey="3">3</button>
+	                <br>
+	                <button class="num" id="4" accesskey="4">4</button>
+	                <button class="num" id="5" accesskey="5">5</button>
+	                <button class="num" id="6" accesskey="6">6</button>
+	                <br>
+	                <button class="num" id="7" accesskey="7">7</button>
+	                <button class="num" id="8" accesskey="8">8</button>
+	                <button class="num" id="9" accesskey="9">9</button>
+	                <br>
+	                <button class="num" id="*" accesskey="*">*</button>
+	                <button class="num" id="0" accesskey="0">0</button>
+	                <button class="num" id="#" accesskey="#">#</button>
+	                <br>
+	            </div>
+	            <div id="dial_control">
+	                <button class="select" id="dial" accesskey="-">Dial</button>
+	                <button class="select" id="clear" accesskey="=">Clear</button>
+	            </div>
 
             </div>
             <div class="contentTab" id="contact_list">
                 Your Teletubby friends:
-                <br>
-                <button class="contact" id="c1">Tinky Winky</button>
-                <br>
-                <button class="contact" id="c2">Dipsy</button>
-                <br>
-                <button class="contact" id="c3">Laa-Laa</button>
-                <br>
-                <button class="contact" id="c4">Po</button>
-                <br>
-                Other:
-                <br>
-                <button class="contact" id="c5">Alice + Bob</button>
-                <br>
-                <button class="contact" id="c6">Joe Bloggs</button>
-                <br>
-                <button class="contact" id="c7">John Doe</button>
+                <table>
+				  <tr>
+				  	<th>Photo</th>
+				    <th>Contact</th>
+				    <th>Phone Number</th>
+				    <th>Email</th>
+				  </tr>
+				  <tr>
+				  	<td><img src="https://vignette.wikia.nocookie.net/telletubbies/images/1/1c/PortalTinky_Winky.jpg/revision/latest/scale-to-width-down/180?cb=20110702162729" alt="Photo of Tinky Winky" width="100" height="100"></td>
+				    <td>Tinky Winky</td>
+				    <td>111-111-1111</td>
+				    <td>tinkywinky@teletubby.mail</td>
+				  </tr>
+				  <tr>
+				  	<td><img src="https://vignette.wikia.nocookie.net/telletubbies/images/6/62/PortalDipsey.jpg/revision/latest/scale-to-width-down/185?cb=20110702163131" alt="Photo of Dipsy" width="100" height="100"></td>
+				    <td>Dipsy</td>
+				    <td>222-222-2222</td>
+				    <td>dipsy@teletubby.mail</td>
+				  </tr>
+				  <tr>
+				  	<td><img src="https://vignette.wikia.nocookie.net/telletubbies/images/d/d6/Tubby_introduce003.jpg/revision/latest?cb=20120712182238" alt="Photo of Laa-Laa" width="100" height="100"></td>
+				    <td>Laa-Laa</td>
+				    <td>333-333-3333</td>
+				    <td>laalaa@teletubby.mail</td>
+				  </tr>
+				  <tr>
+				  	<td><img src="https://vignette.wikia.nocookie.net/telletubbies/images/1/1f/Po%26flag.png/revision/latest/scale-to-width-down/185?cb=20120914000147" alt="Photo of Po" width="100" height="100"></td>
+				    <td>Po</td>
+				    <td>444-444-4444</td>
+				    <td>po@teletubby.mail</td>
+				  </tr>
+				</table>
             </div>
             <div class="contentTab" id="add_contact">
                 <form>
@@ -69,25 +89,77 @@
                     <br>
                     <input id="add3" placeholder="jane.smith@smith.jane">
                 </form>
-                <button class="select" id="addc">Add Contact</button>
-                <button class="select" id="clear2">Clear</button>
+                <button class="select" id="addc" accesskey="+">Add Contact</button>
+                <button class="select" id="clear2" accesskey="=">Clear</button>
+
+            </div>
+            <div class="contentTab" id="help_tab">
+            	Accessibility Features including tabbing for navigation and use of keyboard shortcuts.
+            	<br>
+            	<br>
+            	For Mac Users on Chrome, Firefox, or Safari: use Control+Alt+AccessKey
+            	<br>
+            	For Windows Users on Chrome and Safari: use Alt+AccessKey
+            	<br>
+            	For Windows Users on Firefox: use Alt+Shift+AccessKey
+            	<br>
+            	<br>
+            	Table of Keyboard Shortcuts
+                <table>
+				  <tr>
+				    <th>Button</th>
+				    <th>Keyboard Shortcut</th>
+				  </tr>
+				  <tr>
+				    <td>Dialer Tab</td>
+				    <td>d</td>
+				  </tr>
+				  <tr>
+				    <td>Contact List Tab</td>
+				    <td>c</td>
+				  </tr>
+				  <tr>
+				    <td>Add Contact Tab</td>
+				    <td>a</td>
+				  </tr>
+				  <tr>
+				    <td>Add Contact</td>
+				    <td> + </td>
+				  </tr>
+				  <tr>
+				    <td>Help Tab</td>
+				    <td>h</td>
+				  </tr>
+				  <tr>
+				    <td>Dial Pad</td>
+				    <td>shortcut is number/symbol</td>
+				  </tr>
+				  <tr>
+				    <td>Dial</td>
+				    <td> - </td>
+				  </tr>
+				  <tr>
+				    <td>Clear</td>
+				    <td> = </td>
+				  </tr>
+
+				</table>
+
+				<br>
+				Contact Images source: <a href ="https://teletubbies.fandom.com/wiki/Teletubbies_Wiki">Teletubbies Wiki</a>
 
             </div>
         </div>
         <br>
         <br>
         <br>
-        Assignment 1: GUI Prototyping
+        Assignment 2: Web Accessibility
         <br>
         Elizabeth Qiu
         <br>
         Links to Files:
         <br>
-        <a href="https://github.com/qlychee/GUI-Prototyping/blob/master/index.html">index.html</a> 
-        <br>
-        <a href="https://github.com/qlychee/GUI-Prototyping/blob/master/phone.css">phone.css</a> 
-        <br>
-        <a href="https://github.com/qlychee/GUI-Prototyping/blob/master/phone.js">phone.js</a> 
+        <a href="https://github.com/qlychee/Web-Accessibility">Github Repo</a> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="phone.js"></script>
         

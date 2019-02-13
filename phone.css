@@ -14,17 +14,20 @@
     height: 40px;
     margin: 3px;
 }
-#c1{
-    background-color: purple;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
 }
-#c2 {
-    background-color: green;
+
+td, th {
+  border: 1px solid #696969;
+  text-align: left;
+  padding: 8px;
 }
-#c3 {
-    background-color: yellow;
-}
-#c4 {
-    background-color: red;
+
+tr:nth-child(even) {
+  background-color: #dcdcdc;
 }
 .select{
     width: 78px;
